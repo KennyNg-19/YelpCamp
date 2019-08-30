@@ -1,10 +1,10 @@
 # YelpCamp
 Full stack app where users can login, post and review campgrounds, and comment
 
-[link](https://yelpcamp-kenny.herokuapp.com/)
+[app's link](https://yelpcamp-kenny.herokuapp.com/)
 
 Core knowledge points: **RESTful 7 routes**
-![RESTful 7 routes](https://images.app.goo.gl/BGyk76WEZiCbCh7U8) 
+![RESTful 7 routes](https://miro.medium.com/max/1169/1*Rl7hfHPSDmwVkc4cHRTXFw.png) 
 
 ### What are routes?
 Routes are the code that are responsible for listening and receiving requests and then deciding what to send back.
