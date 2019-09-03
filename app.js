@@ -3,15 +3,16 @@ var express             = require("express"),
     app                 = express(),
     bodyParser          = require("body-parser"),
     mongoose            = require("mongoose"),
-    Campground          = require("./models/campground"),
-    Comment             = require("./models/comment"),
-    User                = require("./models/user"),
     passport            = require("passport"),
     LocalStrategy       = require("passport-local"),
     methodOverride      = require("method-override"),
     flash               = require("connect-flash"),
     cookieParser        = require("cookie-parser"),
-    session             = require("express-session");
+    session             = require("express-session"),
+    // load collections
+    Campground          = require("./models/campground"),
+    Comment             = require("./models/comment"),
+    User                = require("./models/user");
 
 
 // Requiring routes

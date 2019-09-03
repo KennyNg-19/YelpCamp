@@ -22,4 +22,5 @@ var campgroundSchema = new mongoose.Schema({
    ]
 });
 
+// return the collection
 module.exports = mongoose.model("Campground", campgroundSchema);
