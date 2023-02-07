@@ -4,6 +4,12 @@ Full stack app where users can login, post and review campgrounds, and comment.
 
 ## NPM and NodeJS
 
+### node.js
+node.js 是一个JavaScript 运行时，它让JavaScript 脱离了浏览器环境，可以直接在计算机上运行，如访问PC其他组件/在server端(其他的电脑上)运行，所以让**JS（或者说框架 Express) 可以作为后端语言**，极大地拓展了JavaScript用途。
+
+node.js优点：有非阻塞，事件驱动I/O等特性，从而让高并发（high concurrency）在的轮询（Polling）和comet构建的应用中成为可能
+
+### npm
 npm 是 NodeJS 的包管理器(NodeJS package manager)一般是随同 NodeJS 一起安装，能解决 NodeJS**代码部署**上的很多问题：在 Node.js 上开发时，会用到很多别人已经写好的 javascript 代码，如果每当我们需要别人的代码时，都根据名字搜索一下，下载源码，解压，再使用，会非常麻烦——于是就出现了包管理器 npm。大家把**自己写好的源码**上传到 npm 官网上，如果要用某个或某些个，直接通过 npm 安装就可以了
 
 #### Used npm packages:
