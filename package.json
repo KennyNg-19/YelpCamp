@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/KennyNg-19/YelpCamp#readme",
   "engines": {
-    "node": "10.16.3"
+    "node": ">=16.0.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -28,7 +28,7 @@
     "ejs": "^3.1.7",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "geocoder": "^0.2.3",
+    "geocoder": "^0.1.0",
     "method-override": "^3.0.0",
     "moment": "^2.29.4",
     "mongoose": "^5.7.5",
