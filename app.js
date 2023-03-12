@@ -2,7 +2,7 @@
  * @Author: YuhaoWU
  * @Date: 2023-01-30 16:14:40
  * @LastEditors: YuhaoWU
- * @LastEditTime: 2023-03-10 11:47:39
+ * @LastEditTime: 2023-03-12 13:27:33
  * @Description:
  */
 // Requiring modules
@@ -28,21 +28,22 @@ var commentRoutes = require("./routes/comments"),
 
 // Assigning mongoose promise library and connecting to db
 mongoose.Promise = global.Promise;
+mongoose.set("strictQuery", false);
 const databaseUri =
   process.env.MONGODB_URI ||
   "mongodb+srv://admin-kenny:1@cluster0-7phca.mongodb.net/yelp-campDB";
 mongoose
   .connect(databaseUri, {
-    // useMongoClient: true
+    // useMongoClient: true,
     useNewUrlParser: true,
   })
-  .then(() => console.log(`Database connected`))
+  .then(() => console.log(`MongoDB Database connected`))
   .catch((err) => console.log(`Database connection error: ${err.message}`));
 
 // Accounting for deprecated mongoose settings
-mongoose.set("useNewUrlParser", true);
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
+// mongoose.set("useNewUrlParser", true);
+// mongoose.set("useFindAndModify", false);
+// mongoose.set("useCreateIndex", true);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set("view engine", "ejs");
